@@ -4,15 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-watch": "nodemon --exec mocha server/**/*.test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.3.0",
     "body-parser": "^1.17.2",
+    "crypto-js": "^3.1.9-1",
     "express": "^4.15.3",
+    "jsonwebtoken": "^7.4.1",
+    "lodash": "^4.17.4",
     "mongodb": "^2.2.5",
-    "mongoose": "^4.5.9"
+    "mongoose": "^4.5.9",
+    "validator": "^7.0.0"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0",
+    "supertest": "^3.0.0"
   }
 }
